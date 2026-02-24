@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[78563,["/agent-health-monitoring/_next/static/chunks/48fddee88d090727.js","/agent-health-monitoring/_next/static/chunks/f31d809fd04bd4ec.js"],"SessionTraceClient"]
+4:I[97367,["/agent-health-monitoring/_next/static/chunks/ff1a16fafef87110.js","/agent-health-monitoring/_next/static/chunks/a2dfb6fc5208ab9b.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"40cW7w3SUxpFiylxSattf","rsc":["$","$1","c",{"children":[["$","$L2",null,{"params":"$@3"}],[["$","script","script-0",{"src":"/agent-health-monitoring/_next/static/chunks/48fddee88d090727.js","async":true}],["$","script","script-1",{"src":"/agent-health-monitoring/_next/static/chunks/f31d809fd04bd4ec.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+3:{"id":"escalation-rate","sessionId":"session-4"}
+6:null

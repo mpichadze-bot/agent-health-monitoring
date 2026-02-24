@@ -1,0 +1,2 @@
+:HL["/agent-health-monitoring/_next/static/chunks/dd24e1f6d45d65db.css","style"]
+0:{"buildId":"40cW7w3SUxpFiylxSattf","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"alerts","paramType":null,"paramKey":"alerts","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
