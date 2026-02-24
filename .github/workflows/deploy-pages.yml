@@ -33,6 +33,10 @@ jobs:
       - name: Add .nojekyll so GitHub Pages serves _next/
         run: touch ./out/.nojekyll
 
+      - name: Add instant redirect from root to /alerts
+        run: |
+          sed -i 's|<head>|<head><meta http-equiv="refresh" content="0;url=/agent-health-monitoring/alerts/">|' ./out/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
