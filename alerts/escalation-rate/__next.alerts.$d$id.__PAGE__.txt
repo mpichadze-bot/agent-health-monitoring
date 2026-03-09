@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[65181,["/agent-health-monitoring/_next/static/chunks/a290d5e671506965.js","/agent-health-monitoring/_next/static/chunks/ef76d09e043c893d.js","/agent-health-monitoring/_next/static/chunks/7373466316d6729a.js"],"IncidentDetailClient"]
+2:I[65181,["/agent-health-monitoring/_next/static/chunks/3befff2da0b808cf.js","/agent-health-monitoring/_next/static/chunks/ab1b389a796d976c.js"],"IncidentDetailClient"]
 4:I[97367,["/agent-health-monitoring/_next/static/chunks/ff1a16fafef87110.js","/agent-health-monitoring/_next/static/chunks/a2dfb6fc5208ab9b.js"],"OutletBoundary"]
 5:"$Sreact.suspense"
-0:{"buildId":"Rw9Zapb3xOC1ug8lqomuC","rsc":["$","$1","c",{"children":[["$","$L2",null,{"params":"$@3"}],[["$","script","script-0",{"src":"/agent-health-monitoring/_next/static/chunks/a290d5e671506965.js","async":true}],["$","script","script-1",{"src":"/agent-health-monitoring/_next/static/chunks/ef76d09e043c893d.js","async":true}],["$","script","script-2",{"src":"/agent-health-monitoring/_next/static/chunks/7373466316d6729a.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"SxYL59ivEgC2ZQS7Q2bxz","rsc":["$","$1","c",{"children":[["$","$L2",null,{"params":"$@3"}],[["$","script","script-0",{"src":"/agent-health-monitoring/_next/static/chunks/3befff2da0b808cf.js","async":true}],["$","script","script-1",{"src":"/agent-health-monitoring/_next/static/chunks/ab1b389a796d976c.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
 3:{"id":"escalation-rate"}
 6:null
