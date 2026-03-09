@@ -15,6 +15,8 @@ export interface Incident {
   subtitle: string;
 }
 
+export type AlertOn = "All Agents" | "An Agent Type" | "An Individual Agent";
+
 export interface Rule {
   id: string;
   alertName: string;
@@ -28,6 +30,7 @@ export interface Rule {
   lastModified: string;
   active: boolean;
   description?: string;
+  alertOn?: AlertOn;
   aboveBelow?: string;
   threshold?: string;
   channel?: string;
@@ -65,6 +68,9 @@ export interface IncidentSession {
   responseSummary?: string;
   sessionDuration?: string;
   agentApiName?: string;
+  userMessages?: string;
+  subagent?: string;
+  agentTool?: string;
 }
 
 export interface SessionListItem {

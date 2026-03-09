@@ -53,15 +53,6 @@ export function IncidentDetailClient({ params }: IncidentDetailClientProps) {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-sm text-sf-text-secondary">
-                Status: <span className="font-medium text-sf-text">{incident.status}</span>
-              </span>
-              <button
-                className="px-3 py-1.5 rounded-md border-2 border-sf-blue text-sf-blue text-sm font-medium hover:bg-sf-blue hover:text-white transition-colors"
-                tabIndex={0}
-              >
-                Update Status
-              </button>
               <button
                 className="px-3 py-1.5 rounded-md border-2 border-sf-blue text-sf-blue text-sm font-medium hover:bg-sf-blue hover:text-white transition-colors"
                 tabIndex={0}
@@ -72,14 +63,19 @@ export function IncidentDetailClient({ params }: IncidentDetailClientProps) {
                 className="px-3 py-1.5 rounded-md border-2 border-sf-blue text-sf-blue text-sm font-medium hover:bg-sf-blue hover:text-white transition-colors"
                 tabIndex={0}
               >
-                Deactivate
+                Delete
               </button>
             </div>
           </div>
 
           <div className="grid grid-cols-3 gap-4 mb-8">
-            <div className="col-span-2">
-              <h3 className="text-base font-bold text-sf-text mb-3">Alert Location</h3>
+            <div className="col-span-2 relative">
+              <div className="flex items-center gap-2 mb-3">
+                <h3 className="text-base font-bold text-sf-text">Alert Location</h3>
+                <span className="text-[10px] font-medium text-amber-700 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">
+                  Stretch Goal / Post-GA
+                </span>
+              </div>
               <div className="grid grid-cols-2 gap-4">
                 <DonutChart
                   data={topicsData}
@@ -93,10 +89,15 @@ export function IncidentDetailClient({ params }: IncidentDetailClientProps) {
                 />
               </div>
             </div>
-            <div>
-              <h3 className="text-base font-bold text-sf-text mb-3">
-                Errors over the last 7 days
-              </h3>
+            <div className="relative">
+              <div className="flex items-center gap-2 mb-3">
+                <h3 className="text-base font-bold text-sf-text">
+                  Errors over the last 7 days
+                </h3>
+                <span className="text-[10px] font-medium text-amber-700 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">
+                  Stretch Goal / Post-GA
+                </span>
+              </div>
               <TrendLineChart data={dailyErrorData} title="Average" />
             </div>
           </div>
