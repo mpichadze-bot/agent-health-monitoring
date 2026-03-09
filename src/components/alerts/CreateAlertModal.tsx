@@ -490,15 +490,20 @@ export const CreateAlertModal = ({ onClose, rule }: CreateAlertModalProps) => {
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/40"
       onClick={(e) => {
-        setShowSeverityDropdown(false);
-        setShowMetricDropdown(false);
-        setShowAlertOnDropdown(false);
-        setShowAboveBelowDropdown(false);
-        setShowAgentSuggestions(false);
-        if (e.target === e.currentTarget) onClose();
+        if (e.target === e.currentTarget) {
+          setShowSeverityDropdown(false);
+          setShowMetricDropdown(false);
+          setShowAlertOnDropdown(false);
+          setShowAboveBelowDropdown(false);
+          setShowAgentSuggestions(false);
+          onClose();
+        }
       }}
     >
-      <div className="bg-sf-white rounded-xl shadow-2xl w-full max-w-[780px] h-[520px] flex flex-col">
+      <div
+        className="bg-sf-white rounded-xl shadow-2xl w-full max-w-[780px] h-[520px] flex flex-col"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="flex items-center justify-between px-6 py-4 border-b border-sf-border shrink-0">
           <h2 className="text-lg font-bold text-sf-blue">
             {isEditMode ? "Edit The Metric Alert" : "Create New Metric Alert"}
