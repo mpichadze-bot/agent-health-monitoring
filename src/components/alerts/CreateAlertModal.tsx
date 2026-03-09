@@ -15,7 +15,7 @@ const SEVERITY_OPTIONS = ["P0", "P1", "P2"];
 const METRIC_OPTIONS = ["Error Rate", "Escalation", "Latency", "CSAT"];
 const ALERT_ON_OPTIONS: AlertOn[] = ["All Agents", "An Agent Type", "An Individual Agent"];
 const ABOVE_BELOW_OPTIONS = ["Above", "Below"];
-const AGENT_TYPE_SUGGESTIONS = ["Service Agents", "Sales Agents", "Support Agents"];
+const AGENT_TYPE_SUGGESTIONS = ["Service Agents", "Sales Agents", "Employee Agent"];
 const AGENT_SUGGESTIONS = ["Agent 1", "Agent 2", "Agent 3", "Agent 4", "Agent 5"];
 
 export const CreateAlertModal = ({ onClose, rule }: CreateAlertModalProps) => {
@@ -263,7 +263,7 @@ export const CreateAlertModal = ({ onClose, rule }: CreateAlertModalProps) => {
               setShowAlertOnDropdown
             )}
           </div>
-          {alertOn && alertOn !== "" && (
+          {(alertOn === "An Agent Type" || alertOn === "An Individual Agent") && (
             <div className="flex-1">
               <label className="block text-sm font-medium text-sf-text mb-1.5">
                 {alertOn === "An Agent Type" ? "Agent Type" : "Agent"}
